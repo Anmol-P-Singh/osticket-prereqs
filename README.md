@@ -29,7 +29,7 @@
 </ul>
 
 <h2>Installation Steps</h2>
-<h3>1. Within the Virtual Machine in Azure, Download the <code>osTicket-installation-Files.zip</code></h3>
+<h3> Within the Virtual Machine in Azure, Download the <code>osTicket-installation-Files.zip</code></h3>
 
 <p>
   Inside your VM, <a href="https://drive.google.com/uc?export=download&id=1b3RBkXTLNGXbibeMuAynkfzdBC1NnqaD" target="_blank">download the osTicket installation files</a> and unzip them onto your desktop. These files will be used to install osTicket.
@@ -58,7 +58,7 @@
 </p>
 
 
-### ✅ Step: Turn On IIS and CGI
+### ✅Next Step: Turn On IIS and CGI
 
 1. Open the **Control Panel**.  
    ![Open Control Panel](https://github.com/user-attachments/assets/9372d57a-9618-49f1-9dac-7addec1b014b)
@@ -74,3 +74,55 @@
 5. Click **OK** to apply the changes.This will allow your system to support PHP applications like osTicket.
 
 
+<h3>📦 Open the <strong>osTicket-Installation-Files</strong> Folder and Install <strong>PHP Manager for IIS</strong></h3>
+
+<p>
+  <img width="760" height="385" alt="PHP Manager Installation" src="https://github.com/user-attachments/assets/d740c8ff-2387-48c4-9ea6-ef9ef935ebfe" />
+</p>
+
+<h3>🔄 Install the <strong>Rewrite Module</strong> from the same <strong>osTicket-Installation-Files</strong> Folder</h3>
+
+
+<p>
+  <img width="753" height="415" alt="Rewrite Module Installation" src="https://github.com/user-attachments/assets/993f802f-6d58-468a-9fc7-46102f2335c8" />
+</p>
+
+<br />
+
+
+
+
+
+<h3>📁 Open File Explorer, go to the <strong>C:\</strong> drive, and create a new folder named <strong>PHP</strong></h3>
+
+<p>
+  <img width="797" height="603" alt="Creating PHP Folder in C Drive" src="https://github.com/user-attachments/assets/e89b0709-a7d1-46e0-90e8-5b8637e3f2ee" />
+</p>
+
+<br />
+
+<h3>📦 Extract <code>php-7.3.8-nts-Win32-VC15-x86.zip</code> into the <strong>PHP</strong> Folder</h3>
+
+<ul>
+  <li>
+    From the <strong>osTicket-Installation-Files</strong> folder, right-click on 
+    <code>php-7.3.8-nts-Win32-VC15-x86.zip</code> and select <strong>Extract All</strong>.
+  </li>
+</ul>
+
+<p>
+  <img width="538" height="138" alt="Right-click to Extract PHP Zip" src="https://github.com/user-attachments/assets/b1bbc98e-94ac-49a2-a275-2da719d7fb39" />
+</p>
+
+<ul>
+  <li>
+    When prompted, browse to locate the <strong>PHP</strong> folder, or simply type 
+    <code>C:\PHP</code> in the destination path.
+  </li>
+</ul>
+
+<p>
+  <img width="577" height="337" alt="Browse to PHP Folder Location" src="https://github.com/user-attachments/assets/7097cb1e-8080-4c5d-a1ea-c930337eb5ae" />
+</p>
+
+<br />
