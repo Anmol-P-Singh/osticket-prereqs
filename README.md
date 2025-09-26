@@ -187,11 +187,13 @@
   <img width="426" height="280" alt="Run IIS as Administrator"
        src="https://github.com/user-attachments/assets/41f4bfcf-a3d7-4d67-9bfc-49aa6f36bf68" />
 </p>
+
 <ol>
   <li>
-    Open the PHP Manager from within IIS.
+    Open the <strong>PHP Manager</strong> from within <strong>IIS</strong>.
   </li>
 </ol>
+
 <p>
   <img width="426" height="158" alt="Open PHP Manager"
        src="https://github.com/user-attachments/assets/43798a6d-b3ea-4e60-8e43-93f0764ba989" />
@@ -202,6 +204,7 @@
     Click on <strong>Register new PHP version</strong>.
   </li>
 </ol>
+
 <p>
   <img width="468" height="191" alt="Register new PHP version"
        src="https://github.com/user-attachments/assets/7d9164a9-c4f8-4875-9505-0a7be64361cf" />
@@ -212,6 +215,7 @@
     Click the <strong>three dots</strong> to browse, then navigate to the <strong>PHP</strong> folder.
   </li>
 </ol>
+
 <p>
   <img width="819" height="650" alt="Browse to PHP folder"
        src="https://github.com/user-attachments/assets/712f3fa2-e30d-4a97-b1f8-25db799c13ca" />
@@ -222,7 +226,54 @@
     Inside the <strong>PHP</strong> folder, select the <strong>php-cgi.exe</strong> file, then click <strong>OK</strong> to register it.
   </li>
 </ol>
+
 <p>
   <img width="634" height="174" alt="Select php-cgi.exe"
        src="https://github.com/user-attachments/assets/daf50e17-577e-4f02-9ca6-ddfa946f8c21" />
+</p>
+
+<ol start="5">
+  <li>
+    Restart <strong>IIS</strong> to apply the changes. You can do this by clicking <strong>Restart</strong>, or by <strong>stopping</strong> and then <strong>starting</strong> the service manually.
+  </li>
+</ol>
+
+<p>
+  <img width="1420" height="342" alt="Restart IIS Screenshot"
+       src="https://github.com/user-attachments/assets/7c92bd6d-6a72-4ef2-ae7a-b0f6e842f84f" />
+</p>
+
+<h3>📦 Install osTicket v1.15.8</h3>
+
+<ol start="1">
+  <li>
+    Go to the <strong>osTicket-Installation-Files</strong> folder, right-click on <strong>osTicket-v1.15.8.zip</strong>, and select <strong>Extract All</strong>.
+  </li>
+</ol>
+
+<p>
+  <img width="423" height="128" alt="Extract osTicket"
+       src="https://github.com/user-attachments/assets/2ba6fdf8-4e26-4e9e-b59b-7cc50d80cc06" />
+</p>
+
+<p>
+  <img width="577" height="411" alt="Extract location"
+       src="https://github.com/user-attachments/assets/0c586350-4569-48b3-9ff5-f126d353b085" />
+</p>
+
+<ol start="2">
+  <li>
+    After the extraction is complete, open the <strong>osTicket-v1.15.8</strong> folder. Copy the <strong>upload</strong> folder to <strong>wwwroot</strong> by opening another File Explorer window and navigating to <strong>Windows C: ➜ inetpub ➜ wwwroot</strong>.
+    <br>You can do this by dragging the folder from one window to the other.
+  </li>
+</ol>
+
+<p>
+  <img width="793" height="593" alt="Copy to wwwroot"
+       src="https://github.com/user-attachments/assets/013843f1-864e-4e70-ad15-5680ab010b38" />
+</p>
+
+<p>
+  <img width="668" height="129" alt="Upload in wwwroot"
+       src="https://github.com/user-attachments/assets/7fb7e92d-c5b3-4351-b07f-cd045946c48e" />
 </p>
