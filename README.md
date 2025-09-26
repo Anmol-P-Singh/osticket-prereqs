@@ -277,3 +277,11 @@
   <img width="668" height="129" alt="Upload in wwwroot"
        src="https://github.com/user-attachments/assets/7fb7e92d-c5b3-4351-b07f-cd045946c48e" />
 </p>
+
+<ol start="3">
+  <li>
+    Change the name of the <strong>upload</strong> folder to <strong>osTicket</strong>. Make sure to copy it exactly — capitalization matters.
+  </li>
+</ol>
+<p><img width="133" height="93" alt="Screenshot 2025-09-26 110926" src="https://github.com/user-attachments/assets/354ac4c6-e546-4dab-8110-c4cfb764f6dc" />
+</p>
