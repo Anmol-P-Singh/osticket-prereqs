@@ -73,6 +73,7 @@
 
 5. Click **OK** to apply the changes.This will allow your system to support PHP applications like osTicket.
 
+<h1>Downloads</h1>
 
 <h3>📦 Open the <strong>osTicket-Installation-Files</strong> Folder and Install <strong>PHP Manager for IIS</strong></h3>
 
@@ -92,11 +93,11 @@
 
 
 
-
 <h3>📁 Open File Explorer, go to the <strong>C:\</strong> drive, and create a new folder named <strong>PHP</strong></h3>
 
 <p>
-  <img width="797" height="603" alt="Creating PHP Folder in C Drive" src="https://github.com/user-attachments/assets/e89b0709-a7d1-46e0-90e8-5b8637e3f2ee" />
+  <img width="797" height="603" alt="Creating PHP Folder in C Drive"
+       src="https://github.com/user-attachments/assets/e89b0709-a7d1-46e0-90e8-5b8637e3f2ee" />
 </p>
 
 <br />
@@ -105,24 +106,123 @@
 
 <ul>
   <li>
-    From the <strong>osTicket-Installation-Files</strong> folder, right-click on 
+    From the <strong>osTicket-Installation-Files</strong> folder, right-click on
     <code>php-7.3.8-nts-Win32-VC15-x86.zip</code> and select <strong>Extract All</strong>.
   </li>
 </ul>
 
 <p>
-  <img width="538" height="138" alt="Right-click to Extract PHP Zip" src="https://github.com/user-attachments/assets/b1bbc98e-94ac-49a2-a275-2da719d7fb39" />
+  <img width="538" height="138" alt="Right-click to Extract PHP Zip"
+       src="https://github.com/user-attachments/assets/b1bbc98e-94ac-49a2-a275-2da719d7fb39" />
 </p>
 
 <ul>
   <li>
-    When prompted, browse to locate the <strong>PHP</strong> folder, or simply type 
+    When prompted, browse to locate the <strong>PHP</strong> folder, or simply type
     <code>C:\PHP</code> in the destination path.
   </li>
 </ul>
 
 <p>
-  <img width="577" height="337" alt="Browse to PHP Folder Location" src="https://github.com/user-attachments/assets/7097cb1e-8080-4c5d-a1ea-c930337eb5ae" />
+  <img width="577" height="337" alt="Browse to PHP Folder Location"
+       src="https://github.com/user-attachments/assets/7097cb1e-8080-4c5d-a1ea-c930337eb5ae" />
 </p>
 
 <br />
+
+<h3>🔧 Install the VC_redist.x86.exe from the osTicket-Installation-Files folder</h3>
+
+<p>
+  <img width="635" height="402" alt="Installing VC_redist"
+       src="https://github.com/user-attachments/assets/7b80f405-ace6-4ec2-860f-60ba3d3ec710" />
+</p>
+
+<h3>🗄️ Steps to install MySQL 5.5.62 from the osTicket-Installation-Files folder</h3>
+
+<p>
+  <img width="720" height="365" alt="Installing MySQL"
+       src="https://github.com/user-attachments/assets/4fba33f7-38f0-4ed5-8e24-fee6f98d50a7" />
+</p>
+
+<ol>
+  <li>
+    Choose the <strong>Typical</strong> setup type when prompted, then go ahead and complete the installation. Once it's done, launch the application.
+  </li>
+</ol>
+
+<p>
+  <img width="491" height="380" alt="Setup Type - Typical"
+       src="https://github.com/user-attachments/assets/b4fae87b-3537-4639-962b-918b3684b09a" />
+</p>
+
+<ol start="2">
+  <li>
+    Choose the <strong>Standard configuration</strong>.
+  </li>
+</ol>
+
+<p>
+  <img width="524" height="461" alt="Screenshot 2025-09-26 070023"
+       src="https://github.com/user-attachments/assets/db95f5e6-a443-471b-b536-2ffdb6d09a3a" />
+</p>
+
+<ol start="3">
+  <li>
+    Click <strong>Next</strong>, and when you reach the security settings, enter <strong>root</strong> for the passwords. Then click <strong>Next</strong>, followed by <strong>Execute</strong>, and finally, <strong>Finish</strong> to complete the setup.
+  </li>
+</ol>
+
+<p>
+  <img width="497" height="372" alt="Screenshot 2025-09-26 071300"
+       src="https://github.com/user-attachments/assets/111410e4-42af-41c0-a200-aab236316de2" />
+</p>
+
+<h3>🚀 Run <strong>IIS</strong> as Administrator to register PHP from within IIS</h3>
+
+<p>
+  Open the Start menu, search for <strong>IIS</strong>, right-click on it, and choose <strong>Run as administrator</strong>.
+</p>
+
+<p>
+  <img width="426" height="280" alt="Run IIS as Administrator"
+       src="https://github.com/user-attachments/assets/41f4bfcf-a3d7-4d67-9bfc-49aa6f36bf68" />
+</p>
+<ol>
+  <li>
+    Open the PHP Manager from within IIS.
+  </li>
+</ol>
+<p>
+  <img width="426" height="158" alt="Open PHP Manager"
+       src="https://github.com/user-attachments/assets/43798a6d-b3ea-4e60-8e43-93f0764ba989" />
+</p>
+
+<ol start="2">
+  <li>
+    Click on <strong>Register new PHP version</strong>.
+  </li>
+</ol>
+<p>
+  <img width="468" height="191" alt="Register new PHP version"
+       src="https://github.com/user-attachments/assets/7d9164a9-c4f8-4875-9505-0a7be64361cf" />
+</p>
+
+<ol start="3">
+  <li>
+    Click the <strong>three dots</strong> to browse, then navigate to the <strong>PHP</strong> folder.
+  </li>
+</ol>
+<p>
+  <img width="819" height="650" alt="Browse to PHP folder"
+       src="https://github.com/user-attachments/assets/712f3fa2-e30d-4a97-b1f8-25db799c13ca" />
+</p>
+
+<ol start="4">
+  <li>
+    Inside the <strong>PHP</strong> folder, select the <strong>php-cgi.exe</strong> file, then click <strong>OK</strong> to register it.
+  </li>
+</ol>
+<p>
+  <img width="634" height="174" alt="Select php-cgi.exe"
+       src="https://github.com/user-attachments/assets/daf50e17-577e-4f02-9ca6-ddfa946f8c21" />
+</p>
