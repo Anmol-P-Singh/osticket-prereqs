@@ -372,12 +372,53 @@
 </p>
 
 <h2>🔐 Assign and change Permissions in <code>ost-config.php</code></h2>
-<p>
-  To change permissions on <code>ost-config.php</code>, right-click the file and select:<br />
-  <strong>Properties</strong> &rarr; <strong>Security</strong> &rarr; <strong>Advanced</strong> &rarr; <strong>Disable inheritance</strong>.
-</p>
+<ol start="1">
+  <li>
+    Right-click <code>ost-config.php</code> and select:<br />
+    <strong>Properties</strong> &rarr; <strong>Security</strong> &rarr; <strong>Advanced</strong> &rarr; <strong>Disable inheritance</strong>.
+  </li>
+</ol>
+
 <ul>
   <li>Click on <strong>Remove all</strong> to clear inherited permissions.</li>
 </ul>
 <P><img width="761" height="529" alt="image" src="https://github.com/user-attachments/assets/324bdd68-058c-42c4-8389-9e811a8b8ea4" />
 </P>
+
+<ol start="2">
+  <li>
+    Add new permissions by clicking <strong>Add</strong> &rarr; <strong>Select a principal</strong>, then type <code>Everyone</code> in the <em>Enter the object name</em> field.
+    <br /><br />
+    <img width="760" height="535" src="https://github.com/user-attachments/assets/73936358-2c70-4ee0-9d70-46e1436aeeee" alt="Add permissions dialog" />
+    <ul>
+      <li>Click <strong>Add</strong>.</li>
+      <li>Click <strong>Select a principal</strong>.</li>
+      <li>Type <code>Everyone</code> in the object name box.</li>
+      <li>Click <strong>OK</strong>.</li>
+    </ul>
+  </li>
+  <li>
+    Set permissions for <code>Everyone</code> as needed (e.g., Full control) and click OK to apply.
+    <br /><br />
+    <img width="899" height="513" src="https://github.com/user-attachments/assets/f4c064d6-9999-41f8-a3c6-eebf8cede0fd" alt="Permission settings dialog" />
+    <ul>
+      <li>Check the <strong>Full control</strong> box.</li>
+      <li>Click <strong>Ok</strong>.</li>
+    </ul>
+  </li>
+</ol>
+
+<p>
+  <img width="893" height="457" src="https://github.com/user-attachments/assets/172ff0b9-5604-4b98-8dcb-530c4d425b33" alt="Permissions applied confirmation" />
+</p>
+<ul>
+  <li>Click <strong>Ok</strong>.</li>
+  <li>Click <strong>Apply</strong>.</li>
+</ul>
+<p>
+  <img width="768" height="518" alt="Screenshot 2025-09-27 115749" src="https://github.com/user-attachments/assets/3c1bcab2-afb5-4e88-ab19-b2a1f586d515" />
+</p>
+<ul>
+  <li>Click <strong>Ok</strong> to complete.</li>
+</ul>
+
