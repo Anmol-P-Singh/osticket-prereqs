@@ -285,3 +285,99 @@
 </ol>
 <p><img width="133" height="93" alt="Screenshot 2025-09-26 110926" src="https://github.com/user-attachments/assets/354ac4c6-e546-4dab-8110-c4cfb764f6dc" />
 </p>
+
+<ol start="4">
+  <li>
+    Go back to <strong>IIS</strong> and restart the to apply changes.
+  </li>
+</ol>
+<p><img width="991" height="341" alt="Screenshot 2025-09-27 091241" src="https://github.com/user-attachments/assets/e786046f-6a5a-41fd-a07f-9c703cdfff44" />
+</p>
+
+<ol start="5">
+  <li>
+    In <strong>IIS Manager</strong>, expand <code>[Your VM Name] &gt; Sites &gt; Default Web Site &gt; osTicket</code>, then click <strong>Browse *:80 (http)</strong> in the right-hand panel to launch osTicket.
+    <br /><br />
+  </li>
+</ol>
+
+<p>
+  <img width="1424" height="748" alt="Screenshot 2025-09-27 092329" src="https://github.com/user-attachments/assets/78a20005-11e0-405b-aa01-e8251dfd77e6" />
+</p>
+
+<ul>
+  <li>
+    This will lead to your browser opening osTicket. If you notice that some extensions are disabled.
+  </li>
+</ul>
+
+<p>
+  <img width="808" height="729" alt="Screenshot 2025-09-27 102300" src="https://github.com/user-attachments/assets/5d57adc0-0f1a-4811-af48-c6432ffd57b0" />
+
+
+
+</p>
+
+<ol start="6">
+  <li>
+    Go back to <strong>IIS Manager</strong> and open <strong>PHP Manager</strong> under the <code>osTicket</code> site.
+    <br /><br />
+    In PHP Manager, follow these steps to enable the required extensions:
+  </li>
+</ol>
+
+<!-- Step-by-step images in sequence -->
+<div style="display: flex; flex-wrap: wrap; gap: 20px; margin-top: 10px;">
+  <div style="text-align: center;">
+    <img width="92" height="78" alt="Open PHP Manager" src="https://github.com/user-attachments/assets/31394f15-bc22-4243-9fd8-92292338ee6c" />
+    <p><em>1. Open PHP Manager</em></p>
+  </div>
+  <div style="text-align: center;">
+    <img width="350" height="166" alt="Enable or disable an extension" src="https://github.com/user-attachments/assets/7dd8924b-a4ca-41aa-bb5f-abe8e8f080df" />
+    <p><em>2. Click "Enable or disable an extension"</em></p>
+  </div>
+  <div style="text-align: center;">
+    <img width="606" height="654" alt="Enable PHP Extensions" src="https://github.com/user-attachments/assets/25204d94-8db0-49b6-b7b2-be524f03e627" />
+    <p><em>3. Enable the following extensions:</em><br />
+      <code>php_imap.dll</code>, <code>php_intl.dll</code>, <code>php_opcache.dll</code>
+    </p>
+  </div>
+</div>
+
+<ul>
+  <li>
+    Right-click on each of the required extensions and choose <strong>Enable</strong>.
+  </li>
+  <li>
+    Refresh the <code>osTicket</code> site in your browser; enabled extensions will now be seen as active.
+  </li>
+</ul>
+<p><img width="820" height="740" alt="Screenshot 2025-09-27 102409" src="https://github.com/user-attachments/assets/89cc9c39-1768-4c2f-bf22-c37ab15c2500" />
+</p>
+
+<h2>📝 Rename: <code>ost-sampleconfig.php</code> to <code>ost-config.php</code></h2>
+
+<ol start="1">
+  <li>
+    Navigate to <strong>Local Disk (C:)</strong> &rarr; <strong>inetpub</strong> &rarr; <strong>wwwroot</strong> &rarr; <strong>osTicket</strong> &rarr; <strong>include</strong>.<br />
+    Locate the file named <code>ost-sampleconfig.php</code>.
+  </li>
+</ol>
+<p><img width="1122" height="630" alt="Screenshot 2025-09-27 110222" src="https://github.com/user-attachments/assets/418425c0-b5c7-4c0b-9d9e-649ae8f73fe2" />
+</p>
+<p>
+  ✅ Rename the file <code>ost-sampleconfig.php</code> to <code>ost-config.php</code>.
+</p>
+<p><img width="601" height="153" alt="image" src="https://github.com/user-attachments/assets/ce3dca44-458d-419f-bba2-c3c39780d526" />
+</p>
+
+<h2>🔐 Assign and change Permissions in <code>ost-config.php</code></h2>
+<p>
+  To change permissions on <code>ost-config.php</code>, right-click the file and select:<br />
+  <strong>Properties</strong> &rarr; <strong>Security</strong> &rarr; <strong>Advanced</strong> &rarr; <strong>Disable inheritance</strong>.
+</p>
+<ul>
+  <li>Click on <strong>Remove all</strong> to clear inherited permissions.</li>
+</ul>
+<P><img width="761" height="529" alt="image" src="https://github.com/user-attachments/assets/324bdd68-058c-42c4-8389-9e811a8b8ea4" />
+</P>
