@@ -421,4 +421,61 @@
 <ul>
   <li>Click <strong>Ok</strong> to complete.</li>
 </ul>
+<h2 style="color: red; text-align: center;">
+  Go osTicket installer brower tab click continue and fill out the highlighted sections. keep note of the passwords and ubersnames.
+</h2>
+<p><img width="622" height="306" alt="Screenshot 2025-09-28 073130" src="https://github.com/user-attachments/assets/2b78773a-7ef2-4c50-be63-1858bdbad4ad" />
+</p>
+<p><img width="736" height="625" alt="Screenshot 2025-09-28 073244" src="https://github.com/user-attachments/assets/78479a29-edc0-435a-b95f-df6896890f6c" />
+</p>
 
+<h2 style="color: red; text-align: center;">
+<h2 style="color: red; text-align: center;">
+ <h2 style="color: red; text-align: center;">
+  📥 From osTicket-Installation-Files Download and install Heidi SQL
+</h2>
+
+<p>
+  <img width="614" height="521" alt="HeidiSQL Installer Screenshot"
+       src="https://github.com/user-attachments/assets/1774456d-2446-4cb0-af03-1be49c048fe2" />
+</p>
+
+<ol>
+  <li>
+    Just click <strong>Next</strong> until you reach <strong>Install</strong>, then click <strong>Finish</strong>.
+  </li>
+</ol>
+<ol start="2">
+  <li>
+    Click <strong>Skip</strong> to open the HeidiSQL session manager. Press <strong>New</strong>, type password <code>root</code>, then click <strong>Open</strong>.
+  </li>
+</ol>
+
+<p><img width="681" height="477" alt="Screenshot 2025-09-28 075609" src="https://github.com/user-attachments/assets/0052436b-bd75-4bc4-af79-5a10735ec47f" />
+</p>
+
+<ol start="3">
+  <li>
+    We're now creating a database called <code>osTicket</code>. Right-click the <strong>Unnamed</strong> tab, select <strong>Create new</strong> → <strong>Database</strong>.
+  </li>
+</ol>
+<p><img width="749" height="528" alt="Screenshot 2025-09-28 080315" src="https://github.com/user-attachments/assets/578d9854-0940-40aa-8683-e5a6be931b31" />
+</p>
+<ul>
+  <li>Enter <code>osTicket</code> as the name and click <strong>OK</strong>.</li>
+</ul>
+<p><img width="320" height="255" alt="Screenshot 2025-09-28 080817" src="https://github.com/user-attachments/assets/aa122c57-7598-41ee-804c-12ea7eb39e6c" />
+</p>
+<h3>➡️ Database set up! Return to the osTicket browser to complete the form and install.</h3>
+<ul>
+  <li>MySQL Database: <code>osTicket</code></li>
+  <li>MySQL Username: <code>root</code></li>
+  <li>MySQL Password: <code>root</code></li>
+  <li>Click <strong>Install Now!</strong></li>
+</ul>
+
+<p><img width="708" height="337" alt="Screenshot 2025-09-28 081937" src="https://github.com/user-attachments/assets/13356c00-2f07-45a8-8316-2f334790962b" />
+</p>
+<h2 style="color: green; text-align: center;">🎉 osTicket has been installed successfully!</h2>
+<p><img width="736" height="570" alt="Screenshot 2025-09-28 082255" src="https://github.com/user-attachments/assets/5959d270-cbd1-4e26-942a-7b7c4f724eae" />
+</p>
